@@ -66,6 +66,49 @@ body {
   text-decoration: underline;
   color: #0056b3;
 }
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+}
+.services {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+.services:hover {
+  transform: translateY(-5px);
+}
+.services h2 {
+  font-size: 24px;
+  margin: 20px;
+  color: #333;
+}
+.services ul {
+  list-style-type: none;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.services li {
+  margin-bottom: 10px;
+  color: #666;
+}
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slider img {
+  width: 100%;
+  height: auto;
+}
 
 @keyframes fade-in {
   from {
