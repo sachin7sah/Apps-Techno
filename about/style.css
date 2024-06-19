@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.about-us {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  animation: slide-in 1s ease-out;
+}
+
+.about-us h1 {
+  text-align: center;
+  color: #333333;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation: fade-in 1.5s ease-in-out;
+}
+
+.about-us p {
+  color: #555555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fade-in 1.5s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+.about-us p.fade-in:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.about-us p.fade-in:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
+.about-us p.fade-in:nth-child(4) {
+  animation-delay: 2s;
+}
+
+.about-us p.fade-in:nth-child(5) {
+  animation-delay: 2.5s;
+}
+
+.about-us p.fade-in:nth-child(6) {
+  animation-delay: 3s;
+}
+
+.about-us strong {
+  color: #333333;
+}
+
+.about-us a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.about-us a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
